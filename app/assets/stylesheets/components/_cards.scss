@@ -1,0 +1,10 @@
+.cocktails-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 12px;
+}
+
+.cocktail-card {
+  background-color: lightcyan;
+  border: 1px solid black;
+}

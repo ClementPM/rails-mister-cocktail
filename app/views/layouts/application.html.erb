@@ -12,6 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
+  <div class="navbar">
+    LOGO Bar à soif
+    <%= link_to 'Add a cocktail', new_cocktail_path, class: 'btn btn-warning'%>
+  </div>
+
   <body>
     <div class="container">
       <%= yield %>
