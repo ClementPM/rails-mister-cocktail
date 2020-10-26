@@ -1,4 +1,4 @@
-<h1>List of cocktails</h1>
+<h1 class="title-list">List of cocktails</h1>
 
 <div class="cocktails-grid">
   <% @cocktails.each do |cocktail| %>
@@ -7,5 +7,3 @@
   </div>
   <% end %>
 </div>
-
-<%= link_to 'Create a cocktail', new_cocktail_path, class: 'btn btn-secondary' %>

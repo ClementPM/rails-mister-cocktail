@@ -12,7 +12,7 @@ require 'open-uri'
 
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 response = open(url).read
-parsed_response = JSON.parse(response)
+parsed_response = JSON.parse(response)  
 
 drinks = parsed_response['drinks']
 drinks.each do |drink|

@@ -13,12 +13,16 @@
   </head>
 
   <div class="navbar">
-    LOGO Bar à soif
-    <%= link_to 'Add a cocktail', new_cocktail_path, class: 'btn btn-warning'%>
+    <div class="logo">
+      <i class="fas fa-cocktail"></i> Mister Cocktail
+    </div>
+    <%= link_to new_cocktail_path, class: 'btn btn-warning' do %>
+      <i class="fas fa-plus"></i> Add cocktail
+    <% end %>
   </div>
 
   <body>
-    <div class="container">
+    <div class="wrapper">
       <%= yield %>
     </div>
   </body>
