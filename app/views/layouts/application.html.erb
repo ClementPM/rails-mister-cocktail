@@ -14,11 +14,13 @@
 
   <div class="navbar">
     <div class="logo">
-      <i class="fas fa-cocktail"></i> Mister Cocktail
+      <i class="fas fa-cocktail"></i> Chatreuse Cocktails
     </div>
-    <%= link_to new_cocktail_path, class: 'btn btn-warning' do %>
-      <i class="fas fa-plus"></i> Add cocktail
-    <% end %>
+      <%= link_to new_cocktail_path do %>
+    <div class="add-btn-main">
+        <i class="fas fa-plus"></i> Add Cocktail
+    </div>
+      <% end %>
   </div>
 
   <body>

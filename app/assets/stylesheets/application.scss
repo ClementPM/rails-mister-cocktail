@@ -11,14 +11,3 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
-.title-list {
-  color: blue;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-body {
-  background-image: asset-url("app/assets/images/background.jpg");
-}
