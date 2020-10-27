@@ -13,12 +13,12 @@
 @import "pages/index";
 
 .title-list {
-  color: white;
+  color: blue;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.flex {
-  display: flex;
+body {
+  background-image: asset-url("app/assets/images/background.jpg");
 }
