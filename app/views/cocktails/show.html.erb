@@ -3,22 +3,28 @@
 
   <% @cocktail.doses.each do |d| %>
     <li><%= d.description %> => <%= d.ingredient.name %>  
-      <i class="far fa-trash-alt"></i>
+      
       <%= link_to 'delete', dose_path(d), method: :delete %>
+      <i class="far fa-trash-alt"></i>
     </li>
   <% end %>
 
-  <%# BACK TO THE LIST %>
+  <!-- BACK TO THE LIST -->
   <%= link_to root_path, class: 'btn btn-secondary' do %> 
     <i class="fas fa-angle-left"></i> Back to the list
   <% end %>
 
-  <%# DELETE COCKTAIL %>
+  <!-- DELETE COCKTAIL -->
   <%= link_to cocktail_path(@cocktail), method: :delete, data: {confirm: "tsss sure?"}, class: 'btn btn-danger' do %> 
+  
+  <div id="sweet_alert">
     <i class="far fa-trash-alt"></i> Delete cocktail
+  </div>
   <% end %>
 
-  <%# ADD A DOSE %>
+  <!-- ADD A DOSEL -->
   <%= link_to new_cocktail_dose_path(@cocktail), class: 'btn btn-warning' do %>
     <i class="fas fa-plus"></i> Add a new dose
   <% end %> 
+
+  <!-- FIX SWEETALERT -->
