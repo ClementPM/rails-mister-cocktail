@@ -1,12 +1,13 @@
-<h1 class="title-list">“CHARTREUSE: the only liqueur so good they named a color after it” </h1>
+<h1 class="title-list" id="typed-strings">“CHARTREUSE: the only liqueur so good they named a color after it” </h1>
 <h3>Quentin Tarantino, Grindhouse</h3>
 <br>
 
 <div class="cocktails-grid">
   <% @cocktails.each do |cocktail| %>
   <div class="cocktail-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <div class="cocktail-name">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
   </div>
   <% end %>
 </div>
-

@@ -1,11 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
 .cocktails-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 12px;
+  grid-gap: 16px;
 }
 
 .cocktail-card {
-  background-color: bleu;
-  border: 1px solid black;
   height: 200px;
+  border: solid 2px #3e551f;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 50px;
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 50px;
+
+  -moz-box-shadow: 5px 15px 25px #f2e982;
+  -webkit-box-shadow: 5px 15px 25px #f2e982;
+  box-shadow: 5px 15px 25px #f2e982;
+}
+
+.cocktail-name {
+  width: 100%;
+  text-align: center;
+  padding: 5rem;
+  a {
+    color: #f2e982;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+  }
 }

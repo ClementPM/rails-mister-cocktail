@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap");
-
 .logo {
   color: #f2e982;
   font-family: "Rowdies", cursive;
@@ -17,12 +15,12 @@
 
 .title-list {
   color: #84b643;
-  /*font-family: "Kanit", sans-serif;*/
   text-align: center;
   padding-top: 2rem;
   font-size: 3rem;
   text-shadow: 3px 0 #3e551f;
   font-style: italic;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -33,12 +31,23 @@ h3 {
 
 body {
   background-color: #2d2a2e;
+  color: white;
 }
 
 .add-btn-main {
   color: #f2e982;
-  border-style: solid, 2px, #f2e982;
+  border: solid, 2px, #f2e982;
   padding: 19px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.show_flex {
+  display: flex;
+  margin-bottom: 16px;
 }
 
 /*
