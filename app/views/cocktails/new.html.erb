@@ -1,10 +1,15 @@
+<div class="container">
+ <h1 class="text-center">Make it your own</h1>
+  <div class="new-form">
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+      <div class="btn-submit-new-cocktail">
+      <%= f.submit class: 'btn btn-success' %>
+    <% end %>
+  </div>
+</div>
 
-
-  <%= simple_form_for(@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit class: 'btn btn-success' %>
-  <% end %>
 
 
 <%= link_to root_path, class: 'btn btn-secondary' do %> 

@@ -1,11 +1,11 @@
 import Typed from 'typed.js';
 
-const options = {
-  stringsElement: '#typed-strings',
-  typeSpeed: 40,
-  loop: true
-};
+const typed = () => {
+  new Typed('#typed-strings', { 
+    strings: ['CHARTREUSE:, the only liqueur so good, they named a color after it'], 
+  typeSpeed: 70, 
+  loop:true
+});
+}
 
-const typed = new Typed('#typed-strings', options);
-
-export { typed };
+// export { typed };

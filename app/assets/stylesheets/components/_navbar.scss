@@ -29,14 +29,14 @@ h3 {
   padding-bottom: 2rem;
 }
 
-body {
-  background-color: #2d2a2e;
-  color: white;
+.container {
+  background-image: url("/app/assets/images/brick-wall-bkgd.jpg");
+  size: 100vh;
 }
 
 .add-btn-main {
   color: #f2e982;
-  border: solid, 2px, #f2e982;
+  border: solid 2px #f2e982;
   padding: 19px;
 }
 
