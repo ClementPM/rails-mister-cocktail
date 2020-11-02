@@ -6,15 +6,13 @@
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <div class="col-sm-4">
-        <div class="cocktail-card">
-          <div class="cocktail-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=   cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
-            <div class="cocktail-card-txt">
-              <%= link_to cocktail.name, cocktail_path(cocktail) %>
-            </div>
+      <div class="col-12 col-lg-4">
+        <div class="cocktail-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=   cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+          <div class="cocktail-card-name">
+            <%= link_to cocktail.name, cocktail_path(cocktail) %>
           </div>
         </div>
       </div>
     <% end %>
-  </div>
+  </div>  
 </div>
