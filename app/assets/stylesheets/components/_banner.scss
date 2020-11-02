@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 .home-banner {
   background-position: center;
   background-size: cover;
@@ -24,7 +28,7 @@
 }
 
 .banner-txt {
-  color: red;
+  color: #e6739f;
   h1 {
     font-family: "Syncopate", sans-serif;
     color: wheat;
