@@ -13,21 +13,22 @@
   </head>
 
   <body>
-    <div class="navbar">
+  
+    <%# <div class="navbar"> %>
       <%# RIGHT SIDE IN NAVBAR %>
-      <div class="left-navbar">
-        <%= link_to cocktails_path do %>  
-            <i class="fas fa-cocktail"></i> Mister Cocktails
-        <% end %>
-      </div>
+      <%# <div class="left-navbar"> %>
+        <%# <%= link_to cocktails_path do %>   
+            <%# <i class="fas fa-cocktail"></i> Mister Cocktails %>
+        <%# <% end %> 
+      <%# </div> %>
 
       <%# LEFT SIDE IN NAVBAR %>
-      <div class="right-navbar">
-        <%= link_to new_cocktail_path do %>
-            <i class="fas fa-plus"></i> Add Cocktail
-        <% end %>
-      </div>
-    </div>
+      <%# <div class="right-navbar"> %>
+        <%# <%= link_to new_cocktail_path do %> 
+            <%# <i class="fas fa-plus"></i> Add Cocktail %>
+        <%# <% end %> 
+      <%# </div> %>
+    <%# </div> %>
 
     <%= yield %>
 

@@ -29,9 +29,11 @@ body {
 }
 
 .banner-text {
-  h1 {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
+  width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
