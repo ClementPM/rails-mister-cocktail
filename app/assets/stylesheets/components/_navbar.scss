@@ -1,53 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
-.logo {
-  color: #f2e982;
+.navbar {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: "Rowdies", cursive;
   font-style: italic;
   font-weight: bold;
   font-size: 32px;
-  padding: 8px;
-}
-
-.navbar {
-  background-color: #3e551f;
-}
-
-.title-list {
-  color: #84b643;
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 3rem;
-  text-shadow: 3px 0 #3e551f;
-  font-style: italic;
-  margin-bottom: 30px;
+  padding: 1rem 2rem 4rem 2rem;
+  a:hover {
+    color: lightseagreen;
+  }
 }
 
 h3 {
   color: black;
   text-align: right;
   padding-bottom: 2rem;
-}
-
-.container {
-  background-image: url("/app/assets/images/brick-wall-bkgd.jpg");
-  size: 100vh;
-}
-
-.add-btn-main {
-  color: #f2e982;
-  border: solid 2px #f2e982;
-  padding: 19px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.show_flex {
-  display: flex;
-  margin-bottom: 16px;
 }
 
 /*
