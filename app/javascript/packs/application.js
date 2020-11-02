@@ -10,15 +10,14 @@ require("channels")
 
 import 'bootstrap';
 
-// TO UNCOMMENT LATER
-// import { typed } from '../plugins/typed';
+import { typed } from '../plugins/typed';
 
 
-// document.addEventListener('turbolinks:load', () => {
-//   // Call your JS functions here
-//   // [...]
-//   typed();
-// });
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  // [...]
+  typed();
+});
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
