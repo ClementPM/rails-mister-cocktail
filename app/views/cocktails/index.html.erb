@@ -3,7 +3,7 @@
 
 
   <div class="banner-txt">  
-    <h1><%= link_to "Mister cocktail", "https://www.google.com" %></h1>
+    <h1><%= link_to "Mister cocktail", "#list" %></h1>
     <p>
       <h2><span id="typed-strings"></span></h2>
     </p>
@@ -11,6 +11,13 @@
 </div>
 
 <div class="container">
+  <div class="navbar" id="list">      
+    <%= link_to new_cocktail_path do %> 
+      <i class="fas fa-plus"></i> Add Cocktail 
+    <% end %> 
+  </div>
+  
+      <%# DISPLAYING CARDS %>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-12 col-lg-4">
