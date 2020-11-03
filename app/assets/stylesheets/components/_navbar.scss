@@ -3,23 +3,21 @@
 .navbar {
   text-align: right;
   display: block;
+
   text-align: right;
   font-family: "Rowdies", cursive;
   font-style: italic;
-  font-weight: bold;
   font-size: 32px;
   padding: 1rem 2rem 4rem 2rem;
-  a:hover {
-    color: lightseagreen;
+}
+
+#list.navbar {
+  padding-right: 0rem;
+  a {
+    color: #e6739f;
+    font-family: "Syncopate", sans-serif;
   }
 }
-
-h3 {
-  color: black;
-  text-align: right;
-  padding-bottom: 2rem;
-}
-
 /*
   .navbar-lewagon {
     justify-content: space-between;
