@@ -1,40 +1,43 @@
 
+
   <h1 class="title-list"><%= @cocktail.name %></h1>
+<div class="container">
 
-  <div class="show-flex">
-      <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+    <div class="show-flex mb-5 mt-5">
+        <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
 
-        <div class="show-recipe col-12 col-lg-4">
-          <h3>Recipe</h3>
-    <ul>
-          <% @cocktail.doses.each do |d| %>
-          <li>
-            <%= d.description %> <%= d.ingredient.name %>  
-              
-            <%= link_to dose_path(d), method: :delete do%>
-              <i class="far fa-trash-alt" id="deletedose"></i>
+          <div class="show-recipe col-12 col-lg-4">
+            <h3>Recipe</h3>
+      <ul>
+            <% @cocktail.doses.each do |d| %>
+            <li>
+              <%= d.description %> <%= d.ingredient.name %>  
+                
+              <%= link_to dose_path(d), method: :delete do%>
+                <i class="far fa-trash-alt" id="deletedose"></i>
+              <% end %>
+            </li>
             <% end %>
-          </li>
-          <% end %>
-    </ul>
+      </ul>
+      </div>
     </div>
-  </div>
-<p>
-  <!-- BACK TO THE LIST -->
-  <div class="buttons">
-    <%= link_to root_path, class: 'btn btn-secondary' do %> 
-      <i class="fas fa-angle-left"></i> Back to the list
-    <% end %>
+</div>
+<br>
+    <!-- BACK TO THE LIST -->
+<div class="d-flex justify-content-center mt-5">
+      <%= link_to root_path, class: 'btn btn-secondary mr-2' do %> 
+        <i class="fas fa-angle-left"></i> Back to the list
+      <% end %>
 
-    <!-- DELETE COCKTAIL -->
-    <%= link_to cocktail_path(@cocktail), method: :delete, data: {confirm: "tsss sure?"}, class: 'btn btn-danger' do %> 
+      <!-- DELETE COCKTAIL -->
+      <%= link_to cocktail_path(@cocktail), method: :delete, data: {confirm: "tsss sure?"}, class: 'btn btn-danger mr-2' do %> 
 
-      <i class="far fa-trash-alt"></i> Delete cocktail
-    <% end %>
+        <i class="far fa-trash-alt"></i> Delete cocktail
+      <% end %>
 
-    <!-- ADD A DOSE -->
-    <%= link_to new_cocktail_dose_path(@cocktail), class: 'btn btn-warning' do %>
-      <i class="fas fa-plus"></i> Add a new dose
-    <% end %> 
-  </div>
-</p>
+      <!-- ADD A DOSE -->
+      <%= link_to new_cocktail_dose_path(@cocktail), class: 'btn btn-warning' do %>
+        <i class="fas fa-plus"></i> Add a new dose
+      <% end %> 
+</div>
+
