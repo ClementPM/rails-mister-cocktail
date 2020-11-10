@@ -10,12 +10,22 @@
   </div>  
 </div>
 
+
+
 <div class="container">
-  <div class="navbar" id="list">      
+  <div class="navbar pl-0" id="list">   
+      <%# SEARCH BAR %>
+  <%= form_tag(cocktails_path, method: :get, class: 'form-inline') do %>
+      <%= text_field_tag :query, "", placeholder: "find yours", class: 'form-control mr-1' %>
+    <%= submit_tag "Search", class: 'form-control' %>
+  <% end %>
+  
+    <%# ADD COCKTAIL %>
     <%= link_to new_cocktail_path do %> 
       <i class="fas fa-plus"></i> Add Cocktail 
     <% end %> 
-  </div>
+</div>
+
       <%# DISPLAYING CARDS %>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
